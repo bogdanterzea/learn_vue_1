@@ -1,6 +1,6 @@
 const app = Vue.createApp({
-    data(){
-        return{
+    data() {
+        return {
             showDetails: true,
             title: 'VUEEE',
             author: 'Bogdan Terzea',
@@ -30,6 +30,5 @@ const app = Vue.createApp({
             this.y = event.offsetY
         }
     }
-  })
-  
-  app.mount('#app')
+})
+app.mount('#app')

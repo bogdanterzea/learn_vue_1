@@ -21,7 +21,7 @@
   <div id="app">
     <h2>Now the template is here</h2>
     <div v-if="showDetails">
-      <p>Title: {{title}} - Author: {{author}} - Age: {{age}}</p>
+      <p>Title: {{ title }} - Author: {{ author }} - Age: {{ age }}</p>
     </div>
 
     <button v-on:click="age++">Increase age</button>
@@ -36,10 +36,10 @@
     <div class="box" @mouseover="handleEvent">mouseover (enter)</div>
     <div class="box" @mouseleave="handleEvent">mouseleave</div>
     <div class="box" @dblclick="handleEvent">double click</div>
-    <div class="box" @mousemove="handleMousemove">Position in square: {{x}} - {{y}}</div>
+    <div class="box" @mousemove="handleMousemove">Position in square: {{ x }} - {{ y }}</div>
     <br>
     <br>
-    <div v-if="showDetails">
+    <div v-show="showDetails">
       <ul>
         <li v-for="book in books">
           <h3>{{ book.title }}</h3>
