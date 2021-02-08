@@ -10,7 +10,10 @@
 
   <div id="app">
     <h2>Now the template is here</h2>
-    <p>Title: {{title}} - Author: {{author}}</p>
+    <p>Title: {{title}} - Author: {{author}} - Age: {{age}}</p>
+
+    <button v-on:click="age++">Increase age</button>
+    <button v-on:click="age--">Decrease age</button>
   </div>
 
   <script src="app.js"></script>
