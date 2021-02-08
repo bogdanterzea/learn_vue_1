@@ -7,8 +7,8 @@ const app = Vue.createApp({
         }
     },
     methods: {
-        changeTitle() {
-            this.title = 'New VUE'
+        changeTitle(title) {
+            this.title = title
         }
     }
   })
