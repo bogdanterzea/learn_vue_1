@@ -4,7 +4,9 @@ const app = Vue.createApp({
             showDetails: true,
             title: 'VUEEE',
             author: 'Bogdan Terzea',
-            age: 24
+            age: 24,
+            x: 0,
+            y: 0
         }
     },
     methods: {
@@ -13,6 +15,13 @@ const app = Vue.createApp({
         },
         toggleShowDetails() {
             this.showDetails = !this.showDetails
+        },
+        handleEvent(event) {
+            console.log(event)
+        },
+        handleMousemove(event) {
+            this.x = event.offsetX
+            this.y = event.offsetY
         }
     }
   })
