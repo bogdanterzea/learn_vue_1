@@ -5,6 +5,12 @@ const app = Vue.createApp({
             title: 'VUEEE',
             author: 'Bogdan Terzea',
             age: 24,
+            books: [
+                { title: 'Angels and demons', author: 'Dan Brown' },
+                { title: 'Inferno', author: 'Dan Brown' },
+                { title: 'Da Vinci Code', author: 'Dan Brown' },
+                { title: 'The lost key', author: 'Dan Brown' }
+            ],
             x: 0,
             y: 0
         }
