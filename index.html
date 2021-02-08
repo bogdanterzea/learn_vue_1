@@ -18,7 +18,7 @@
     <button v-on:click="age--">Decrease age</button>
     <button @click="toggleShowDetails">
       <span v-if="showDetails">Hide details</span>
-      <span v-if="!showDetails">Show details</span>
+      <span v-else>Show details</span>
     </button>
     <div v-on:click="changeTitle('My own title')">Change title</div>
   </div>
