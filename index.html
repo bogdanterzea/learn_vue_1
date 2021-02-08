@@ -10,10 +10,16 @@
 
   <div id="app">
     <h2>Now the template is here</h2>
-    <p>Title: {{title}} - Author: {{author}} - Age: {{age}}</p>
+    <div v-if="showDetails">
+      <p>Title: {{title}} - Author: {{author}} - Age: {{age}}</p>
+    </div>
 
     <button v-on:click="age++">Increase age</button>
     <button v-on:click="age--">Decrease age</button>
+    <button @click="toggleShowDetails">
+      <span v-if="showDetails">Hide details</span>
+      <span v-if="!showDetails">Show details</span>
+    </button>
     <div v-on:click="changeTitle('My own title')">Change title</div>
   </div>
 

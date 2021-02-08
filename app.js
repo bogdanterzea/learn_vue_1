@@ -1,6 +1,7 @@
 const app = Vue.createApp({
     data(){
         return{
+            showDetails: true,
             title: 'VUEEE',
             author: 'Bogdan Terzea',
             age: 24
@@ -9,6 +10,9 @@ const app = Vue.createApp({
     methods: {
         changeTitle(title) {
             this.title = title
+        },
+        toggleShowDetails() {
+            this.showDetails = !this.showDetails
         }
     }
   })
