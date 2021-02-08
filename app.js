@@ -6,13 +6,14 @@ const app = Vue.createApp({
             author: 'Bogdan Terzea',
             age: 24,
             books: [
-                { title: 'Angels and demons', author: 'Dan Brown' },
-                { title: 'Inferno', author: 'Dan Brown' },
-                { title: 'Da Vinci Code', author: 'Dan Brown' },
-                { title: 'The lost key', author: 'Dan Brown' }
+                { title: 'Angels and demons', author: 'Dan Brown', img: 'images/DanBrown1.jpeg' },
+                { title: 'Inferno', author: 'Dan Brown', img: 'images/DanBrown2.jpeg' },
+                { title: 'Da Vinci Code', author: 'Dan Brown', img: 'images/DanBrown3.jpeg' },
+                { title: 'The lost key', author: 'Dan Brown', img: 'images/DanBrown4.jpeg' }
             ],
             x: 0,
-            y: 0
+            y: 0,
+            snowboardUrl: 'https://snowboardpro.ro/'
         }
     },
     methods: {

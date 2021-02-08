@@ -42,11 +42,16 @@
     <div v-show="showDetails">
       <ul>
         <li v-for="book in books">
+          <img :src="book.img" :alt="book.title">
           <h3>{{ book.title }}</h3>
           <p>{{ book.author }}</p>
         </li>
       </ul>
     </div>
+    <br>
+    <br>
+    <p>Here we'll add a href :D</p>
+    <a v-bind:href="snowboardUrl">Snowboard equipment</a>
   </div>
 
   <script src="app.js"></script>
