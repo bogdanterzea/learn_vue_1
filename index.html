@@ -64,7 +64,7 @@
     <br>
     <div v-show="showDetails">
       <ul>
-        <li v-for="book in books" :class="{ fav: book.isFavourite }">
+        <li @click="book.isFavourite = !book.isFavourite" v-for="book in books" :class="{ fav: book.isFavourite }">
           <img :src="book.img" :alt="book.title">
           <h3>{{ book.title }}</h3>
           <p>{{ book.author }}</p>
