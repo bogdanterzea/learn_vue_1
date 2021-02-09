@@ -73,6 +73,17 @@
     </div>
     <br>
     <br>
+    <div>
+      <h3>Favourite books downhere</h3>
+      <ul>
+        <li v-for="book in filtredBooks">
+          <img :src="book.img" :alt="book.title">
+          <h3>{{ book.title }}</h3>
+          <p>{{ book.author }}</p>
+        </li>
+      </ul>
+    </div>
+    <br>
     <p>Here we'll add a href :D</p>
     <a v-bind:href="snowboardUrl">Snowboard equipment</a>
   </div>

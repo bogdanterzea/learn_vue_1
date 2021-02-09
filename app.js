@@ -30,6 +30,11 @@ const app = Vue.createApp({
             this.x = event.offsetX
             this.y = event.offsetY
         }
+    },
+    computed: {
+        filtredBooks() {
+            return this.books.filter((book) => book.isFavourite)
+        }
     }
 })
 app.mount('#app')
